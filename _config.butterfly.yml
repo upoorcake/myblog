@@ -578,28 +578,26 @@ gitalk:
 # Valine
 # https://valine.js.org
 valine:
-  appId: demo-appid  # 本地测试用
-  appKey: demo-appkey  # 本地测试用
-  avatar: mp
+  appId: HRHpAOI2HZg7L97HEeaOmTzr-MdYXbMMI  # LeanCloud AppID
+  appKey: 4lzc97Bv2aaFyW7wMeZ3zVRc  # LeanCloud AppKey
+  avatar: robohash  # 随机机器人头像
   # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  serverURLs: https://leancloud.api.dev  # 本地测试用
-  bg:
+  serverURLs: # LeanCloud国际版无需填写
+  bg: # 可选：评论框背景图
   # Use Valine visitor count as the page view count
   visitor: false
   option:
-    placeholder: '欢迎留言~ 昵称和邮箱都是可选的，支持匿名评论 ✨'
-    requiredFields: []
-    meta: ['nick']
-    # 启用匿名评论
-    anonymous: true
-    # 头像设置
-    avatar: 'robohash'
-    # 评论框高度
-    pageSize: 10
-    # 记录IP
-    recordIP: false
-    # 服务器地址 (LeanCloud)
-    serverURL: 'https://demo.leancloud.cn'
+    placeholder: '说点什么吧~ 昵称和邮箱都是可选的 ✨'
+    requiredFields: []  # 不强制要求任何字段
+    meta: ['nick', 'mail']  # 显示昵称和邮箱输入框
+    # 匿名友好配置
+    anonymous: true  # 允许匿名
+    avatar: 'robohash'  # 随机头像
+    pageSize: 10  # 每页显示评论数
+    lang: 'zh-CN'  # 语言
+    recordIP: false  # 不记录IP
+    enableQQ: false  # 禁用QQ头像
+    # 昵称占位符会自动随机生成可爱的名字
 
 # Waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
@@ -667,11 +665,22 @@ twikoo:
 # Giscus
 # https://giscus.app/
 giscus:
-  repo: giscus/giscus
-  repo_id: MDEwOlJlcG9zaXRvcnkzOTEzMTMwMjA
-  category_id: DIC_kwDOF1L2fM4B-hVS
+  repo: upoorcake/myblog
+  repo_id: YOUR_REPO_ID  # 需要从giscus.app获取
+  category: General
+  category_id: YOUR_CATEGORY_ID  # 需要从giscus.app获取
   light_theme: light
-  dark_theme: dark
+  dark_theme: dark_dimmed
+  # 启用懒加载
+  loading: lazy
+  # 启用反应
+  reactions_enabled: 1
+  # 发表评论前先发表反应
+  emit_metadata: 0
+  # 输入位置 top/bottom
+  input_position: top
+  # 语言
+  lang: zh-CN
   js:
   option:
 
