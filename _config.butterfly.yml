@@ -595,6 +595,9 @@ valine:
     avatar: 'robohash'  # 随机头像
     recordIP: false  # 不记录IP
     enableQQ: false  # 禁用QQ头像
+    # 尝试绕过CORS问题
+    mathJax: false
+    highlight: false
 
 # Waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
