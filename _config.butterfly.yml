@@ -587,17 +587,28 @@ valine:
   # Use Valine visitor count as the page view count
   visitor: false
   option:
+    el: '#vcomments'
     placeholder: '说点什么吧~ 昵称和邮箱都是可选的 ✨'
     requiredFields: []  # 不强制要求任何字段
     meta: ['nick', 'mail']  # 显示昵称和邮箱输入框
-    # 匿名友好配置
-    anonymous: true  # 允许匿名
-    avatar: 'robohash'  # 随机头像
     pageSize: 10  # 每页显示评论数
     lang: 'zh-CN'  # 语言
+    avatar: 'robohash'  # 随机头像
     recordIP: false  # 不记录IP
     enableQQ: false  # 禁用QQ头像
-    # 昵称占位符会自动随机生成可爱的名字
+    # 匿名友好配置
+    guest_info: nick,mail  # 客人信息字段
+    anonymous: true  # 允许匿名
+    highlight: true  # 代码高亮
+    mathJax: false  # 数学公式
+    # 表情包
+    emojiCDN: 'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo'
+    emojiMaps: {
+      'smile': '😊',
+      'laugh': '😂',
+      'heart': '❤️',
+      'ok': '👌'
+    }
 
 # Waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
