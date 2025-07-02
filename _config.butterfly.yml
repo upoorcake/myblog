@@ -583,7 +583,7 @@ valine:
   appKey: 4lzc97Bv2aaFyW7wMeZ3zVRc  # 您的 LeanCloud AppKey
   avatar: robohash  # 随机机器人头像
   # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  serverURLs: https://hrhpaoi2.api.lncldglobal.com  # LeanCloud 国际版 API 地址
+  serverURLs: https://api.upoorcake.com  # LeanCloud 国际版 API 地址
   bg: # 可选：评论框背景图
   # Use Valine visitor count as the page view count
   visitor: false
