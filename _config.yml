@@ -7,13 +7,13 @@ title: 这烦躁的秋天飘在我的头上
 subtitle: '分享技术与生活'
 description: '学习、分享以及随笔'
 keywords: 博客,CV,科研绘图C4D,写作
-author: the Keeper of 餠餠
+author: 你喔
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://your-blog.vercel.app
+url: https://myblog-upoorcake.netlify.app  # 您的Netlify部署地址
 permalink: :title/
 permalink_defaults:
 pretty_urls:
@@ -102,8 +102,8 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/yourusername/yourusername.github.io.git
-  branch: main
+  repo: https://github.com/upoorcake/myblog.git  # 修正为正确的仓库地址
+  branch: master  # 使用master分支，与您当前分支一致
 
 # Performance Optimization Plugins
 # 图片懒加载
