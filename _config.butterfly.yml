@@ -536,7 +536,7 @@ comments:
   # Leave it empty if you don't need comments
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   # Format of two comments system : Disqus,Waline
-  use: Giscus
+  use: Waline
   # Display the comment name next to the button
   text: true
   # Lazyload: The comment system will be load when comment element enters the browser's viewport.
@@ -603,29 +603,35 @@ valine:
 # Waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://your-waline.vercel.app  # 替换为您的Waline服务器地址
+  serverURL: https://waline-comment-brown.vercel.app  # 您的Waline服务地址
   bg: 
   # Use Waline pageview count as the page view count
   pageview: false
   option:
     lang: zh-CN
     locale:
-      placeholder: '说点什么吧~ 昵称和邮箱都是可选的 ✨'
-    # 不强制要求任何字段，支持匿名评论
-    requiredMeta: []
-    # 随机头像
-    avatar: 'robohash'
+      placeholder: '欢迎留言~ 昵称随意填写，邮箱可选 ✨'
+    # 支持完全匿名评论的关键配置
+    requiredMeta: []  # 不强制要求任何字段
+    login: 'disable'  # 禁用强制登录
+    # 头像配置
+    avatar: 'robohash'  # 随机机器人头像，增加趣味性
     avatarCDN: 'https://sdn.geekzu.org/avatar/'
+    # 显示配置
     pageSize: 10
     highlight: true
-    # 启用匿名评论
-    anonymous: true
-    # 图片上传支持
-    imageUploader: false
-    # 数学公式支持
-    texRenderer: false
-    # 表情包
-    emoji: ['//unpkg.com/@waline/emojis@1.1.0/weibo']
+    # 表情包支持
+    emoji: [
+      '//unpkg.com/@waline/emojis@1.1.0/weibo',
+      '//unpkg.com/@waline/emojis@1.1.0/qq'
+    ]
+    # 其他功能
+    imageUploader: false  # 暂时禁用图片上传
+    texRenderer: false    # 数学公式支持
+    commentSorting: 'latest'  # 按最新排序
+    # 反垃圾配置
+    akismet: false
+    wordLimit: 0  # 不限制评论字数
 
 # Utterances
 # https://utteranc.es/
