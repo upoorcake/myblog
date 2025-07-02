@@ -536,7 +536,7 @@ comments:
   # Leave it empty if you don't need comments
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   # Format of two comments system : Disqus,Waline
-  use: Valine
+  use: Giscus
   # Display the comment name next to the button
   text: true
   # Lazyload: The comment system will be load when comment element enters the browser's viewport.
@@ -603,19 +603,29 @@ valine:
 # Waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://your-waline-server.vercel.app
+  serverURL: https://your-waline.vercel.app  # 替换为您的Waline服务器地址
   bg: 
   # Use Waline pageview count as the page view count
-  pageview: true
+  pageview: false
   option:
     lang: zh-CN
     locale:
-      placeholder: '欢迎留言，支持 Markdown 语法 ヾ(≧▽≦*)o'
-    requiredMeta: ['nick', 'mail']
-    avatar: 'retro'
+      placeholder: '说点什么吧~ 昵称和邮箱都是可选的 ✨'
+    # 不强制要求任何字段，支持匿名评论
+    requiredMeta: []
+    # 随机头像
+    avatar: 'robohash'
     avatarCDN: 'https://sdn.geekzu.org/avatar/'
     pageSize: 10
     highlight: true
+    # 启用匿名评论
+    anonymous: true
+    # 图片上传支持
+    imageUploader: false
+    # 数学公式支持
+    texRenderer: false
+    # 表情包
+    emoji: ['//unpkg.com/@waline/emojis@1.1.0/weibo']
 
 # Utterances
 # https://utteranc.es/
@@ -667,9 +677,9 @@ twikoo:
 # https://giscus.app/
 giscus:
   repo: upoorcake/myblog
-  repo_id: YOUR_REPO_ID  # 需要从giscus.app获取
+  repo_id: R_kgDONXHKxQ  # 从giscus.app获取的repo_id
   category: General
-  category_id: YOUR_CATEGORY_ID  # 需要从giscus.app获取
+  category_id: DIC_kwDONXHKxc4CltXF  # 从giscus.app获取的category_id
   light_theme: light
   dark_theme: dark_dimmed
   # 启用懒加载
