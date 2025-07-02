@@ -1,10 +1,13 @@
 # Netlify配置
 [build]
-  command = "npm run build"
+  command = "npm install && npx hexo clean && npx hexo generate --config _config.yml,_config.production.yml"
   publish = "public"
 
 [build.environment]
   NODE_VERSION = "18"
+  # 确保使用生产环境配置
+  NODE_ENV = "production"
+  HEXO_ENV = "production"
 
 [[headers]]
   for = "/*"

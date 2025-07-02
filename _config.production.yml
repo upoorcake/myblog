@@ -1,0 +1,12 @@
+# 生产环境专用配置
+# 这个文件用于覆盖开发环境的配置
+
+# 确保使用正确的生产环境URL
+url: https://upoorcake.cn
+root: /
+
+# 部署设置
+deploy:
+  type: git
+  repo: https://github.com/upoorcake/myblog.git
+  branch: master

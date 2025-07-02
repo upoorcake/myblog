@@ -4,6 +4,8 @@ date: 2025-07-01 10:00:00
 tags: [欢迎, 博客]
 categories: [生活]
 description: 博客的第一篇文章，介绍博客的主要内容和目标
+cover: /img/her.jpg  # 添加封面图片
+top_img: /img/her.jpg  # 添加头部背景图片
 ---
 
 # 欢迎来到我的个人博客！
