@@ -304,7 +304,7 @@ aside:
       link: https://github.com/upoorcake
   card_announcement:
     enable: true
-    content: 欢迎来到我的博客！这里是我和我的世界的秘密~ 🌟
+    content: 欢迎来到我的博客！这里藏着我的秘密~ 🌟
   card_recent_post:
     enable: true
     # If set 0 will show all
@@ -602,35 +602,11 @@ valine:
 # Waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://waline.vercel.app  # 使用官方演示服务测试
+  serverURL:  # 已禁用
   bg: 
   # Use Waline pageview count as the page view count
   pageview: false
   option:
-    lang: zh-CN
-    locale:
-      placeholder: '欢迎留言~ 昵称随意填写，邮箱可选 ✨'
-    # 支持完全匿名评论的关键配置
-    requiredMeta: []  # 不强制要求任何字段
-    login: 'disable'  # 禁用强制登录
-    # 头像配置
-    avatar: 'robohash'  # 随机机器人头像，增加趣味性
-    avatarCDN: 'https://sdn.geekzu.org/avatar/'
-    # 显示配置
-    pageSize: 10
-    highlight: true
-    # 表情包支持
-    emoji: [
-      '//unpkg.com/@waline/emojis@1.1.0/weibo',
-      '//unpkg.com/@waline/emojis@1.1.0/qq'
-    ]
-    # 其他功能
-    imageUploader: false  # 暂时禁用图片上传
-    texRenderer: false    # 数学公式支持
-    commentSorting: 'latest'  # 按最新排序
-    # 反垃圾配置
-    akismet: false
-    wordLimit: 0  # 不限制评论字数
 
 # Utterances
 # https://utteranc.es/
@@ -657,10 +633,8 @@ facebook_comments:
 
 # Twikoo
 # https://github.com/imaegoo/twikoo
-# Twikoo
-# https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
+  envId:  # 已禁用
   region:
   # Use Twikoo visitor count as the page view count
   visitor: false
@@ -669,21 +643,16 @@ twikoo:
 # Giscus
 # https://giscus.app/
 giscus:
-  repo: upoorcake/myblog
-  repo_id: R_kgDONXHKxQ  # 从giscus.app获取的repo_id
-  category: General
-  category_id: DIC_kwDONXHKxc4CltXF  # 从giscus.app获取的category_id
+  repo:  # 已禁用
+  repo_id:
+  category:
+  category_id:
   light_theme: light
   dark_theme: dark_dimmed
-  # 启用懒加载
   loading: lazy
-  # 启用反应
   reactions_enabled: 1
-  # 发表评论前先发表反应
   emit_metadata: 0
-  # 输入位置 top/bottom
   input_position: top
-  # 语言
   lang: zh-CN
   js:
   option:
