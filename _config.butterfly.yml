@@ -579,11 +579,11 @@ gitalk:
 # Valine
 # https://valine.js.org
 valine:
-  appId: HRHpAOI2HZg7L97HEeaOmTzr-MdYXbMMI  # LeanCloud AppID
-  appKey: 4lzc97Bv2aaFyW7wMeZ3zVRc  # LeanCloud AppKey
+  appId: HRHpAOI2HZg7L97HEeaOmTzr-MdYXbMMI  # 测试用的 LeanCloud AppID
+  appKey: 4lzc97Bv2aaFyW7wMeZ3zVRc  # 测试用的 LeanCloud AppKey
   avatar: robohash  # 随机机器人头像
   # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  serverURLs: https://hrhpaoi2.lc-cn-n1-shared.com  # 使用国内可访问的域名
+  serverURLs:  # 留空，自动检测国际版
   bg: # 可选：评论框背景图
   # Use Valine visitor count as the page view count
   visitor: false
