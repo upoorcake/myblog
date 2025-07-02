@@ -111,6 +111,10 @@ cover:
   # When cover is not set, the default cover is displayed
   default_cover:
     - /img/background.png
+    - /img/upoorcake (7).JPG
+    - /img/upoorcake (6).JPG
+    - /img/upoorcake (2).jpg
+    - /img/upoorcake (52).jpg
     # - https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg2.png
     # - https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg3.png
 

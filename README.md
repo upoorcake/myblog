@@ -1,54 +1,63 @@
-# 我的个人博客
+# 这烦躁的秋天飘在我的头上 ✨
 
-基于 Hexo + Vercel 的高性能个人博客，专注于快速加载和优质内容。
+基于 Hexo + Butterfly 主题的个人博客，专注于CV、C4D科研绘图和生活分享。
+
+🌐 **在线访问**: [https://upoorcake.cn](https://upoorcake.cn)
 
 ## 🚀 特性
 
-- ⚡ **极速加载**：多种性能优化，首屏加载 < 2秒
+- 🎨 **Butterfly主题**：美观现代的设计风格
 - 📱 **响应式设计**：完美适配各种设备
-- 🖼️ **图片懒加载**：节省流量，提升体验
-- 🔍 **SEO优化**：搜索引擎友好
+- 💬 **Valine评论系统**：支持匿名评论，无需注册
+- 🖼️ **图片懒加载**：优化加载性能
+- 🔍 **本地搜索**：快速检索文章内容
+- 🌙 **深色模式**：护眼体验
 - 📝 **Markdown支持**：便捷的写作体验
-- 🌐 **全球CDN**：Vercel提供的全球加速
+- � **SEO优化**：搜索引擎友好
 
 ## 🛠️ 技术栈
 
-- **Hexo 7.3.0** - 静态博客生成器
-- **Vercel** - 部署和CDN
+- **Hexo 5.3.5** - 静态博客生成器
+- **Butterfly主题** - 美观的博客主题
+- **Netlify** - 静态网站托管和CDN
 - **GitHub** - 代码托管和版本控制
+- **LeanCloud** - 评论系统后端服务
 
-## 📦 性能优化插件
+## 📦 功能插件
 
-- `hexo-filter-optimize` - 资源压缩优化
-- `hexo-lazyload-image` - 图片懒加载
+- `hexo-theme-butterfly` - 主题支持
+- `hexo-generator-search` - 本地搜索功能
 - `hexo-generator-sitemap` - 网站地图生成
 - `hexo-generator-feed` - RSS订阅支持
+- `hexo-wordcount` - 文章字数统计
+- `hexo-filter-optimize` - 资源压缩优化
 
-## 🚀 快速部署到Vercel
+## 🚀 部署到Netlify
 
 ### 1. 推送到GitHub
 
 ```bash
-git init
 git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/yourusername/your-blog.git
-git push -u origin main
+git commit -m "更新博客内容"
+git push origin master
 ```
 
-### 2. 连接Vercel
+### 2. Netlify自动部署
 
-1. 访问 [Vercel](https://vercel.com)
-2. 使用GitHub账号登录
-3. 点击 "New Project"
-4. 选择您的博客仓库
-5. 保持默认设置，点击 "Deploy"
+博客已配置Netlify自动部署：
+1. 代码推送到GitHub后自动触发构建
+2. 构建命令：`hexo generate`
+3. 发布目录：`public`
+4. 自动绑定域名：`upoorcake.cn`
 
-### 3. 自定义域名（可选）
+## 📄 主要页面
 
-1. 在Vercel项目设置中添加自定义域名
-2. 按照提示配置DNS记录
-3. 等待SSL证书自动生成
+- 🏠 **首页**: 最新文章展示
+- 📝 **归档**: 按时间浏览所有文章
+- 🏷️ **标签**: 按标签分类浏览
+- 📁 **分类**: 按分类浏览文章
+- 💬 **留言板**: 访客留言互动
+- ❤️ **关于**: 个人介绍页面
 
 ## 📝 本地开发
 
@@ -56,14 +65,15 @@ git push -u origin main
 # 安装依赖
 npm install
 
-# 本地预览
-npm run server
-
 # 清理缓存
-npm run clean
+hexo clean
 
 # 生成静态文件
-npm run build
+hexo generate
+
+# 本地预览
+hexo server
+# 访问 http://localhost:4000
 ```
 
 ## ✍️ 写作指南
@@ -80,41 +90,72 @@ hexo new post "文章标题"
 ---
 title: 文章标题
 date: 2025-07-01 10:00:00
-tags: [标签1, 标签2]
-categories: [分类]
+tags: [CV, C4D, 技术]
+categories: [技术分享]
 description: 文章描述
+cover: /img/cover.jpg  # 可选：文章封面
 ---
 ```
 
 ### 图片使用
 
-1. 将图片放在 `source/images/` 目录
-2. 在文章中使用相对路径：`![描述](/images/image.jpg)`
-3. 自动启用懒加载优化
+1. 将图片放在 `source/img/` 目录
+2. 在文章中使用：`![描述](/img/image.jpg)`
+3. 支持多种格式：jpg, png, gif等
 
-## 🎨 主题自定义
+## 🎨 主题配置
 
-当前使用 Landscape 主题，您可以：
+### Butterfly主题特色
+- **多种布局模式**：支持多种文章列表布局
+- **丰富的组件**：标签云、归档时间轴、分类统计等
+- **自定义配置**：颜色主题、字体、背景等
+- **代码高亮**：支持多种代码高亮主题
 
-1. 修改 `_config.landscape.yml` 自定义主题
-2. 或安装其他主题：`npm install hexo-theme-theme-name`
+### 主要配置文件
+- `_config.yml` - Hexo主配置
+- `_config.butterfly.yml` - 主题配置
 
-## 📊 性能监控
+## � 评论系统
 
-建议使用以下工具监控网站性能：
+使用Valine评论系统，特点：
+- ✅ **无需注册**：访客可直接评论
+- ✅ **匿名友好**：昵称可选，自动生成
+- ✅ **简洁美观**：界面简约，体验流畅
+- ✅ **实时通知**：支持邮件通知（可选）
 
-- **Google PageSpeed Insights** - 性能评分
-- **GTmetrix** - 详细性能分析
-- **Vercel Analytics** - 访问统计
+## 📊 内容分类
 
-## 🤝 贡献
+- **技术分享**：CV、机器学习相关
+- **科研绘图**：C4D制图技巧和经验
+- **生活随笔**：个人感悟和日常分享
+- **学习笔记**：各种学习心得
 
-欢迎提交 Issue 和 Pull Request！
+## 🤝 贡献与反馈
+
+欢迎通过以下方式参与：
+- 🐛 **问题反馈**：提交Issue报告Bug
+- 💡 **功能建议**：分享您的创意想法
+- 💬 **留言互动**：在博客留言板分享观点
+
+## 📞 联系方式
+
+- 📧 **邮箱**: athenass_u@foxmail.com
+- 🐙 **GitHub**: [@upoorcake](https://github.com/upoorcake)
+- 🌐 **博客**: [https://upoorcake.cn](https://upoorcake.cn)
 
 ## 📄 许可证
 
-MIT License
+本项目采用 MIT License 开源协议。
+
+## 🙏 致谢
+
+- [Hexo](https://hexo.io/) - 优秀的静态博客框架
+- [Butterfly](https://butterfly.js.org/) - 美观的Hexo主题
+- [Netlify](https://www.netlify.com/) - 稳定的静态网站托管
+- [LeanCloud](https://www.leancloud.cn/) - 评论系统后端支持
 
 ---
 
-⭐ 如果这个项目对您有帮助，请给个Star！
+💝 **"守候是我一生的追逐"** - 感谢每一位访客的陪伴！
+
+⭐ 如果喜欢这个博客，欢迎给个Star支持！
