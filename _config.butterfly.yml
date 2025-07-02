@@ -536,7 +536,7 @@ comments:
   # Leave it empty if you don't need comments
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   # Format of two comments system : Disqus,Waline
-  use: Waline
+  use: Valine
   # Display the comment name next to the button
   text: true
   # Lazyload: The comment system will be load when comment element enters the browser's viewport.
@@ -583,27 +583,26 @@ valine:
   appKey: 4lzc97Bv2aaFyW7wMeZ3zVRc  # LeanCloud AppKey
   avatar: robohash  # 随机机器人头像
   # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  serverURLs: https://hrhpaoi2.api.lncldglobal.com  # LeanCloud国际版API地址
+  serverURLs:  # 留空，使用默认服务器
   bg: # 可选：评论框背景图
   # Use Valine visitor count as the page view count
   visitor: false
   option:
-    placeholder: '说点什么吧~ 昵称和邮箱都是可选的 ✨'
-    requiredFields: []  # 不强制要求任何字段
-    meta: ['nick', 'mail']  # 显示昵称和邮箱输入框
+    placeholder: '说点什么吧~ 完全匿名，随意留言 ✨'
+    requiredFields: []  # 不强制要求任何字段，支持完全匿名
+    meta: []  # 完全隐藏昵称和邮箱输入框
     pageSize: 10  # 每页显示评论数
     lang: 'zh-CN'  # 语言
-    avatar: 'robohash'  # 随机头像
-    recordIP: false  # 不记录IP
+    avatar: 'robohash'  # 随机机器人头像
+    recordIP: false  # 不记录IP地址
     enableQQ: false  # 禁用QQ头像
-    # 尝试绕过CORS问题
     mathJax: false
     highlight: false
 
 # Waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://waline-comment-brown.vercel.app  # 您的Waline服务地址
+  serverURL: https://waline.vercel.app  # 使用官方演示服务测试
   bg: 
   # Use Waline pageview count as the page view count
   pageview: false
@@ -658,26 +657,14 @@ facebook_comments:
 
 # Twikoo
 # https://github.com/imaegoo/twikoo
+# Twikoo
+# https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://twikoo-demo.vercel.app
+  envId:
   region:
   # Use Twikoo visitor count as the page view count
-  visitor: true
+  visitor: false
   option:
-    # 匿名评论配置
-    anonymousName: '匿名用户'
-    # 允许匿名评论
-    anonymous: true
-    # 随机头像
-    avatar: 'mp'
-    # 不强制要求邮箱
-    requiredFields: []
-    # 昵称占位符
-    placeholder:
-      nickname: '昵称 (可选)'
-      mail: '邮箱 (可选)'
-      link: '网站 (可选)'
-      comment: '说点什么吧... ✨'
 
 # Giscus
 # https://giscus.app/

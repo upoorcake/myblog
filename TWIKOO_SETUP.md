@@ -1,114 +1,131 @@
-# Twikoo评论系统部署指南
+# Twikoo 评论系统配置指南
 
-## 什么是Twikoo？
-Twikoo是一个简洁、安全、免费的静态网站评论系统，支持匿名评论，无需注册即可参与讨论。
+## 🎯 为什么选择 Twikoo？
 
-## 主要特色
-- 🎭 **完全匿名**：用户无需填写昵称和邮箱即可评论
-- 🚀 **加载迅速**：轻量级设计，加载速度极快
-- 📱 **移动友好**：完美适配移动设备
-- 🛡️ **垃圾过滤**：内置垃圾评论过滤机制
-- 🔔 **邮件通知**：支持评论回复邮件通知（可选）
+- ✅ **完全匿名** - 无需注册、无需登录
+- ✅ **国内稳定** - 使用 MongoDB Atlas 国内节点  
+- ✅ **免费方案** - MongoDB Atlas 免费 512MB 存储
+- ✅ **简单配置** - 一次部署，长期使用
+- ✅ **美观现代** - 支持 Markdown、表情、回复
 
-## 免费部署方案
+## 🚀 快速部署（10分钟完成）
 
-### 方案一：Vercel部署（推荐）
+### 步骤1：一键部署 Twikoo 到 Vercel
 
-1. **访问Vercel**
-   - 前往 [vercel.com](https://vercel.com)
-   - 使用GitHub账号登录
+1. 点击一键部署：
+   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fimaegoo%2Ftwikoo%2Ftree%2Fmain%2Fsrc%2Fvercel)
 
-2. **部署Twikoo**
+2. 在 Vercel 页面：
+   - 选择 GitHub 登录
+   - 项目名设为：`twikoo-comments`
+   - 点击 `Deploy`
+
+3. 部署完成后，获得地址：`https://你的项目名.vercel.app`
+
+### 步骤2：创建免费 MongoDB 数据库
+
+1. 访问 [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+2. 注册账号（或用 Google 账号登录）
+3. 选择免费计划（M0 Sandbox）
+4. 选择地区：`Asia Pacific (Hong Kong)` 或 `Asia Pacific (Singapore)`
+5. 创建集群
+
+### 步骤3：配置数据库连接
+
+1. 在 MongoDB Atlas：
+   - 点击 `Database Access`
+   - 创建数据库用户（记住用户名和密码）
+   - 点击 `Network Access`
+   - 添加 IP 地址：`0.0.0.0/0`（允许所有 IP）
+
+2. 获取连接字符串：
+   - 点击 `Connect`
+   - 选择 `Connect your application`
+   - 复制连接字符串，格式类似：
+     `mongodb+srv://用户名:密码@cluster0.xxxxx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+
+### 步骤4：配置环境变量
+
+1. 回到 Vercel 项目：
+   - 进入 `Settings` > `Environment Variables`
+   - 添加变量：
+     - `MONGODB_URI`: `你的MongoDB连接字符串`
+     - `TWIKOO_SITE_URL`: `https://upoorcake.cn`（你的博客地址）
+
+2. 在 Vercel 重新部署：
+   - 进入 `Deployments`
+   - 点击最新部署右侧的 `...`
+   - 选择 `Redeploy`
+
+### 步骤5：更新博客配置
+
+1. 修改 `_config.butterfly.yml` 中的 Twikoo 配置：
+   ```yaml
+   twikoo:
+     envId: https://你的项目名.vercel.app
+   ```
+
+2. 重新生成并部署博客：
    ```bash
-   # 克隆Twikoo仓库
-   git clone https://github.com/imaegoo/twikoo.git
-   cd twikoo
-   
-   # 在Vercel中新建项目，选择这个仓库
-   # 或者直接使用一键部署：
-   ```
-   
-3. **配置环境变量**
-   在Vercel项目设置中添加：
-   ```
-   TWIKOO_ENV_ID=your-environment-id
+   hexo clean
+   hexo g
+   git add .
+   git commit -m "配置 Twikoo 评论系统"
+   git push
    ```
 
-4. **获取部署地址**
-   部署完成后，获得类似 `https://your-twikoo.vercel.app` 的地址
+## 🎨 功能特点
 
-### 方案二：腾讯云CloudBase
+- **匿名评论**：无需注册，直接输入昵称即可评论
+- **Markdown 支持**：支持代码高亮、链接、图片等
+- **表情包**：丰富的表情选择
+- **邮件通知**：新评论自动邮件提醒
+- **后台管理**：访问 `https://你的项目名.vercel.app` 进行管理
+- **反垃圾**：内置反垃圾机制和关键词过滤
 
-1. 注册腾讯云账号并开通CloudBase
-2. 创建环境，选择按量计费
-3. 在环境中部署Twikoo云函数
-4. 获得环境ID用于配置
+## 🔧 高级配置
 
-## 博客配置
+### 邮件通知配置
 
-在 `_config.butterfly.yml` 中配置：
-
-```yaml
-comments:
-  use: Twikoo
-
-twikoo:
-  envId: https://your-twikoo.vercel.app  # 你的Twikoo部署地址
-  region: 
-  visitor: true
-  option:
-    anonymousName: '匿名用户'
-    anonymous: true
-    avatar: 'mp'
-    requiredFields: []
-    placeholder:
-      nickname: '昵称 (可选)'
-      mail: '邮箱 (可选)'  
-      link: '网站 (可选)'
-      comment: '说点什么吧... ✨'
+在 Vercel 环境变量中添加：
+```
+SMTP_SERVICE=QQ        # 邮件服务商
+SMTP_USER=你的QQ邮箱    # 发件邮箱
+SMTP_PASS=你的授权码    # 邮箱授权码
+SITE_NAME=穷蛋糕的小站  # 网站名称
+SITE_URL=https://upoorcake.cn
+BLOGGER_EMAIL=你的邮箱  # 博主邮箱
 ```
 
-## 匿名评论配置说明
+### 自定义样式
 
-- `anonymousName`: 匿名用户的默认昵称
-- `anonymous: true`: 允许匿名评论
-- `requiredFields: []`: 不强制要求任何字段
-- `avatar: 'mp'`: 使用Monster头像（随机生成）
-
-## 常见问题
-
-### Q: 如何完全隐藏昵称和邮箱输入框？
-A: 可以通过CSS隐藏输入框：
+在博客中添加自定义 CSS：
 ```css
-.tk-input[name="nick"], 
-.tk-input[name="mail"] {
-  display: none !important;
+/* Twikoo 样式优化 */
+.twikoo {
+  max-width: 100%;
+}
+.twikoo .tk-submit {
+  background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
 }
 ```
 
-### Q: 评论数据存储在哪里？
-A: 
-- Vercel方案：数据存储在云端数据库
-- CloudBase方案：存储在腾讯云数据库
+## 📞 技术支持
 
-### Q: 如何备份评论数据？
-A: Twikoo提供数据导出功能，可在管理面板中操作
+- [Twikoo 官方文档](https://twikoo.js.org/)
+- [GitHub Issues](https://github.com/imaegoo/twikoo/issues)
+- 部署遇到问题可随时询问
 
-### Q: 是否支持多级回复？
-A: 支持，用户可以回复特定评论形成讨论串
+## ⚠️ 注意事项
 
-## 性能优化建议
+1. **MongoDB 免费额度**：512MB 存储，足够数万条评论
+2. **Vercel 限制**：每月 100GB 流量，对个人博客完全够用
+3. **备份重要**：定期导出评论数据备份
+4. **域名绑定**：可以在 Vercel 绑定自定义域名
 
-1. **启用CDN**：使用CDN加速Twikoo资源加载
-2. **懒加载**：在主题中启用评论懒加载
-3. **预加载**：可选择性预加载评论数据
+---
 
-## 管理和维护
-
-- **管理员登录**：通过特定链接访问管理界面
-- **评论审核**：可设置评论需要审核后显示
-- **垃圾过滤**：自动过滤垃圾评论
-- **数据统计**：查看评论数量和活跃度
+**配置完成后，您的博客将拥有一个完全匿名、美观、稳定的评论系统！**
 
 ---
 
