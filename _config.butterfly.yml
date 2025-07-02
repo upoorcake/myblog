@@ -583,7 +583,7 @@ valine:
   appKey: 4lzc97Bv2aaFyW7wMeZ3zVRc  # LeanCloud AppKey
   avatar: robohash  # 随机机器人头像
   # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  serverURLs:  # 留空，使用默认服务器
+  serverURLs: https://hrhpaoi2.lc-cn-n1-shared.com  # 使用国内可访问的域名
   bg: # 可选：评论框背景图
   # Use Valine visitor count as the page view count
   visitor: false
