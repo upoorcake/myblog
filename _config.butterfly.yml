@@ -11,7 +11,7 @@
 
 nav:
   # Navigation bar logo image
-  logo: /img/avatar.jpg
+  logo: http://img.upoorcake.cn/upoorcake/avatar.jpg
   display_title: true
   # Whether to fix navigation bar
   fixed: true
@@ -62,17 +62,17 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.ico  # 使用主题默认的favicon
+favicon: http://img.upoorcake.cn/upoorcake/avatar.jpg  # 使用主题默认的favicon
 
 avatar:
-  img: /img/avatar.jpg
+  img: http://img.upoorcake.cn/upoorcake/avatar.jpg
   effect: false  # 关闭头像旋转效果
 
 # Disable all banner images
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: /img/her.jpg
+default_top_img: http://img.upoorcake.cn/upoorcake/006cn0osly1g1mx7b89tmj33402c0e83.jpg
 
 # The banner image of index page
 index_img: 
@@ -110,24 +110,24 @@ cover:
   archives_enable: true
   # When cover is not set, the default cover is displayed
   default_cover:
-    - /img/background.png
-    - /img/upoorcake (7).JPG
-    - /img/upoorcake (6).JPG
-    - /img/upoorcake (2).jpg
-    - /img/upoorcake (52).jpg
+    - http://img.upoorcake.cn/upoorcake/000028.JPG
+    - http://img.upoorcake.cn/upoorcake/006cn0osly1g4khizxqr7j32tc240kjm.jpg
+    - http://img.upoorcake.cn/upoorcake/006cn0osgw1excmzyekcfj30zk0jzwml.jpg
+    - http://img.upoorcake.cn/upoorcake/006cn0osly1ghqjzjum0ij32tc240qv5.jpg
+    - http://img.upoorcake.cn/upoorcake/006cn0osly1h4w7gshawzj32tc240hdt.jpg
     # - https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg2.png
     # - https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg3.png
 
 # Replace Broken Images
 error_img:
-  flink: /img/friend_404.gif
-  post_page: /img/404.jpg
+  flink: http://img.upoorcake.cn/upoorcake/404.jpg
+  post_page: http://img.upoorcake.cn/upoorcake/404.jpg
 
 # A simple 404 page
 error_404:
   enable: false
   subtitle: 'Page Not Found'
-  background: /img/error-page.png
+  background: http://img.upoorcake.cn/upoorcake/404.jpg
 
 post_meta:
   # Home Page
@@ -594,6 +594,7 @@ valine:
     pageSize: 10  # 每页显示评论数
     lang: 'zh-CN'  # 语言
     avatar: 'robohash'  # 随机机器人头像
+    avatarCDN: https://gravatar.loli.net/avatar/
     recordIP: false  # 不记录IP地址
     enableQQ: false  # 禁用QQ头像
     mathJax: false

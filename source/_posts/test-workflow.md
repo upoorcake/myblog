@@ -6,7 +6,7 @@ tags:
   - 工作流
 categories: 
   - 技术分享
-cover: /img/upoorcake (7).JPG
+cover: http://img.upoorcake.cn/upoorcake/000028.JPG
 description: 测试 Obsidian + 七牛云图床 + Hexo 博客的完整工作流程
 ---
 
