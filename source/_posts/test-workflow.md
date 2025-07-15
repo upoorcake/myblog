@@ -7,6 +7,7 @@ tags:
 categories: 
   - 技术分享
 cover: http://img.upoorcake.cn/upoorcake/006cn0osly1gfhq5z7of8j30qo0i875k.jpg
+top_img: http://img.upoorcake.cn/upoorcake/006cn0osly1gfhq5z7of8j30qo0i875k.jpg
 description: 测试 Obsidian + 七牛云图床 + Hexo 博客的完整工作流程
 ---
 

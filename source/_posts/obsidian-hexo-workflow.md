@@ -9,6 +9,7 @@ tags:
 categories: 
   - 技术分享
 cover: http://img.upoorcake.cn/upoorcake/006cn0osly1h4p7x72sqpj32tc2404qq (1).jpg
+top_img: http://img.upoorcake.cn/upoorcake/006cn0osly1h4p7x72sqpj32tc2404qq (1).jpg
 description: 分享我使用 Obsidian 作为写作工具，结合 Hexo 静态博客的完整工作流程，让写作和发布变得更加高效。
 ---
 
