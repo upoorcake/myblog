@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>这烦躁的秋天飘在我的头上</title>
+  <icon>https://upoorcake.cn/icon.png</icon>
+  <subtitle>分享技术与生活</subtitle>
+  <link href="https://upoorcake.cn/atom.xml" rel="self"/>
+  
+  <link href="https://upoorcake.cn/"/>
+  <updated>2025-07-15T15:31:28.228Z</updated>
+  <id>https://upoorcake.cn/</id>
+  
+  <author>
+    <name>你喔</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>空心球壳</title>
+    <link href="https://upoorcake.cn/C4D%E5%AD%A6%E4%B9%A0_01/"/>
+    <id>https://upoorcake.cn/C4D%E5%AD%A6%E4%B9%A0_01/</id>
+    <published>2025-07-08T15:03:00.000Z</published>
+    <updated>2025-07-15T15:31:28.228Z</updated>
+    
+    
+    <summary type="html">把之前学习过的C4D过程重新整理，也是再复习一遍，yes</summary>
+    
+    
+    
+    <category term="技术分享" scheme="https://upoorcake.cn/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+    <category term="科研建模" scheme="https://upoorcake.cn/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/%E7%A7%91%E7%A0%94%E5%BB%BA%E6%A8%A1/"/>
+    
+    <category term="C4D" scheme="https://upoorcake.cn/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/%E7%A7%91%E7%A0%94%E5%BB%BA%E6%A8%A1/C4D/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>测试图床工作流</title>
+    <link href="https://upoorcake.cn/test-workflow/"/>
+    <id>https://upoorcake.cn/test-workflow/</id>
+    <published>2025-07-02T18:00:00.000Z</published>
+    <updated>2025-07-15T15:31:24.433Z</updated>
+    
+    
+    <summary type="html">测试 Obsidian + 七牛云图床 + Hexo 博客的完整工作流程</summary>
+    
+    
+    
+    <category term="技术分享" scheme="https://upoorcake.cn/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="测试" scheme="https://upoorcake.cn/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="工作流" scheme="https://upoorcake.cn/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的写作工作流：Obsidian + Hexo 博客搭建</title>
+    <link href="https://upoorcake.cn/obsidian-hexo-workflow/"/>
+    <id>https://upoorcake.cn/obsidian-hexo-workflow/</id>
+    <published>2025-07-02T16:20:00.000Z</published>
+    <updated>2025-07-15T15:31:26.884Z</updated>
+    
+    
+    <summary type="html">分享我使用 Obsidian 作为写作工具，结合 Hexo 静态博客的完整工作流程，让写作和发布变得更加高效。</summary>
+    
+    
+    
+    <category term="技术分享" scheme="https://upoorcake.cn/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="工作流" scheme="https://upoorcake.cn/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    
+    <category term="博客" scheme="https://upoorcake.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="Obsidian" scheme="https://upoorcake.cn/tags/Obsidian/"/>
+    
+    <category term="Hexo" scheme="https://upoorcake.cn/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>欢迎来到我的博客</title>
+    <link href="https://upoorcake.cn/welcome/"/>
+    <id>https://upoorcake.cn/welcome/</id>
+    <published>2025-07-01T02:00:00.000Z</published>
+    <updated>2025-07-15T15:31:22.893Z</updated>
+    
+    
+    <summary type="html">博客的第一篇文章，介绍博客的主要内容和目标</summary>
+    
+    
+    
+    <category term="生活" scheme="https://upoorcake.cn/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="博客" scheme="https://upoorcake.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="欢迎" scheme="https://upoorcake.cn/tags/%E6%AC%A2%E8%BF%8E/"/>
+    
+  </entry>
+  
+</feed>
