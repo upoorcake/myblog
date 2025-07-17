@@ -1,4 +1,4 @@
----
+﻿---
 title: 我的写作工作流：Obsidian + Hexo 博客搭建
 date: 2025-07-03 00:20:00
 tags: 
@@ -8,8 +8,7 @@ tags:
   - 工作流
 categories: 
   - 技术分享
-cover: http://img.upoorcake.cn/upoorcake/006cn0osly1h4p7x72sqpj32tc2404qq (1).jpg
-top_img: http://img.upoorcake.cn/upoorcake/006cn0osly1h4p7x72sqpj32tc2404qq (1).jpg
+cover: /img/upoorcake (7).JPG
 description: 分享我使用 Obsidian 作为写作工具，结合 Hexo 静态博客的完整工作流程，让写作和发布变得更加高效。
 ---
 
@@ -115,3 +114,4 @@ description: 分享我使用 Obsidian 作为写作工具，结合 Hexo 静态博
 **状态**: 已完成
 **字数**: 约 1200 字
 **预计阅读时间**: 5 分钟
+
