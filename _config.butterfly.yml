@@ -72,14 +72,14 @@ avatar:
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: http://img.upoorcake.cn/upoorcake/006cn0osly1g1mx7b89tmj33402c0e83.jpg
+default_top_img: http://img.upoorcake.cn/upoorcake/avatar.jpg
 
 # The banner image of index page
-index_img: 
+index_img: http://img.upoorcake.cn/upoorcake/006cn0osly1g1mx7b89tmj33402c0e83.jpg
 
 # The banner image of archive page
-archive_img:
-
+archive_img: http://img.upoorcake.cn/upoorcake/006cn0osly1g1mx7b89tmj33402c0e83.jpg
+ 
 # Note: tag page, not tags page
 tag_img:
 
@@ -110,11 +110,11 @@ cover:
   archives_enable: true
   # When cover is not set, the default cover is displayed
   default_cover:
-    - http://img.upoorcake.cn/upoorcake/000028.JPG
-    - http://img.upoorcake.cn/upoorcake/006cn0osly1g4khizxqr7j32tc240kjm.jpg
-    - http://img.upoorcake.cn/upoorcake/006cn0osgw1excmzyekcfj30zk0jzwml.jpg
-    - http://img.upoorcake.cn/upoorcake/006cn0osly1ghqjzjum0ij32tc240qv5.jpg
-    - http://img.upoorcake.cn/upoorcake/006cn0osly1h4w7gshawzj32tc240hdt.jpg
+  #   - http://img.upoorcake.cn/upoorcake/000028.JPG
+  #   - http://img.upoorcake.cn/upoorcake/background.png
+  #   - http://img.upoorcake.cn/upoorcake/background.png
+  #   - http://img.upoorcake.cn/upoorcake/006cn0osly1ha7kkd50h1j32c0340nhj.jpg
+  #   - http://img.upoorcake.cn/upoorcake/006cn0osly1ha7kkd50h1j32c0340nhj.jpg
     # - https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg2.png
     # - https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg3.png
 
@@ -594,7 +594,6 @@ valine:
     pageSize: 10  # 每页显示评论数
     lang: 'zh-CN'  # 语言
     avatar: 'robohash'  # 随机机器人头像
-    avatarCDN: https://gravatar.loli.net/avatar/
     recordIP: false  # 不记录IP地址
     enableQQ: false  # 禁用QQ头像
     mathJax: false
@@ -1020,7 +1019,7 @@ instantpage: true
 # Lazyload
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: true
+  enable: false
   # Specify the field to use lazyload (site or post)
   field: site
   placeholder:
