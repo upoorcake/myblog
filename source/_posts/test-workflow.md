@@ -1,12 +1,12 @@
 ﻿---
 title: 测试图床工作流
 date: 2025-07-03 02:00:00
-tags: 
+tags:
   - 测试
   - 工作流
-categories: 
+categories:
   - 技术分享
-cover: /img/upoorcake (7).JPG
+cover: http://img.upoorcake.cn/upoorcake/006cn0osly1g8bwq3o0hgj30zk1bf78n.jpg
 description: 测试 Obsidian + 七牛云图床 + Hexo 博客的完整工作流程
 ---
 

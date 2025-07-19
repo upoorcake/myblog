@@ -1,14 +1,14 @@
 ﻿---
 title: 我的写作工作流：Obsidian + Hexo 博客搭建
 date: 2025-07-03 00:20:00
-tags: 
+tags:
   - 博客
   - Obsidian
   - Hexo
   - 工作流
-categories: 
+categories:
   - 技术分享
-cover: /img/upoorcake (7).JPG
+cover: http://img.upoorcake.cn/upoorcake/006cn0osly1g6rvggdephj32tc240b29.jpg
 description: 分享我使用 Obsidian 作为写作工具，结合 Hexo 静态博客的完整工作流程，让写作和发布变得更加高效。
 ---
 
