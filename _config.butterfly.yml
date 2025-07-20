@@ -62,7 +62,7 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: http://img.upoorcake.cn/upoorcake/avatar.jpg  # 使用主题默认的favicon
+favicon: http://img.upoorcake.cn/upoorcake/202507201849813.png  # 使用主题默认的favicon
 
 avatar:
   img: http://img.upoorcake.cn/upoorcake/avatar.jpg
@@ -274,7 +274,7 @@ footer:
   owner:
     enable: true
     since: 2024
-  custom_text: 守候是我一生的追逐 ✨
+  custom_text: 我比任何一个人都希望你幸福，只是想想这段幸福没有我的份 又会很难过 ✨
   # Copyright of theme and framework
   copyright: true
 
@@ -296,7 +296,7 @@ aside:
     category: true
   card_author:
     enable: true
-    description: 关于CV、关于C4D、关于我
+    description: CV,C4D,Cpp,C#
     button:
       enable: true
       icon: fab fa-github
@@ -304,7 +304,7 @@ aside:
       link: https://github.com/upoorcake
   card_announcement:
     enable: true
-    content: 欢迎来到我的博客！这里藏着我的秘密~ 🌟
+    content: 欢迎来到我的博客！一起学习呀~ 🌟
   card_recent_post:
     enable: true
     # If set 0 will show all
