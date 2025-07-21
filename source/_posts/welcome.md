@@ -4,7 +4,7 @@ date: 2025-07-01 10:00:00
 tags: [欢迎, 博客]
 categories: [生活]
 description: 博客的第一篇文章，介绍博客的主要内容和目标
-cover: http://img.upoorcake.cn/upoorcake/006cn0osgw1excmzyekcfj30zk0jzwml.jpg  # 添加封面图片
+cover: http://img.upoorcake.cn/upoorcake/006cn0osgw1fal1ptuvocj31hc1z4e82.jpg  # 添加封面图片
 top_img: http://img.upoorcake.cn/upoorcake/006cn0osgw1excmzyekcfj30zk0jzwml.jpg  # 添加头部背景图片
 ---
 
