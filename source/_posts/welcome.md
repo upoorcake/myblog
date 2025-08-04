@@ -2,7 +2,7 @@
 title: 欢迎来到我的博客
 date: 2025-07-01 10:00:00
 tags: [欢迎, 博客]
-categories: [生活]
+categories: [生活随笔]
 description: 博客的第一篇文章，介绍博客的主要内容和目标
 cover: http://img.upoorcake.cn/upoorcake/006cn0osgw1fal1ptuvocj31hc1z4e82.jpg  # 添加封面图片景图片
 ---
