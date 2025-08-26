@@ -305,3 +305,8 @@ if __name__ == "__main__":
 第一张图试运行的状态图 
 
 第二张图是生成的结果图 示例
+
+下面是生成的标签文件 符合PaddleOCR使用的格式
+
+![image.png](http://img.upoorcake.cn/upoorcake/202508262230119.png)
+
