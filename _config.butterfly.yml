@@ -179,7 +179,7 @@ subtitle:
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
-    - "蚀尽春心冰棱寸，光栅裂影照空尘"
+    - "欲买桂花同载酒，终不似，少年游。"
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -274,7 +274,7 @@ footer:
   owner:
     enable: true
     since: 2024
-  custom_text: 我比任何一个人都希望你幸福，只是想想这段幸福没有我的份 又会很难过 ✨
+  custom_text: 黄鹤断矶头，故人今在否？
   # Copyright of theme and framework
   copyright: true
 
